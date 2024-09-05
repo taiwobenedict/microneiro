@@ -94,7 +94,7 @@ section {
 .menu-btn {
     border: 5px solid var(--font-color);
     box-shadow: 6px 6px 0px 0px #040B42;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     display: inline-block;
     border-radius: 24px;
     padding: 5px 25px;
@@ -104,7 +104,7 @@ section {
     margin-left: 30px;
 }
 
-.menu-btn:hover {
+.menu-open {
     box-shadow: unset;
     transform: translate(5px, 5px);
 }
@@ -116,7 +116,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 250px;
+    width: fit-content;
     border: 5px solid var(--font-color);
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
@@ -127,7 +127,7 @@ section {
 }
 
 .menubar .nav-link {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: var(--font-color);
 }
 
@@ -137,20 +137,149 @@ section {
 
 
 /* About us */
+#about .box {
+    background: url("/images/aboutBg.png") center center/cover no-repeat;
+    background-color: #B6DBFF;
+
+}
+
 .about-heading {
     background: linear-gradient(90deg, #842AFC 0%, #CC6DFA 50%, #65ECFF 100%);
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-align: center;
     border-bottom: 5px solid #3A055A;
 }
 
 .about-text {
-    font-size: 1.3rem;
+    font-size: 2.1875rem;
 }
 
 /* Tokenomics */
 .token-heading {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     text-align: center;
 
+}
+
+.chart {
+    margin-top: 5rem;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.chart-img {
+    max-width: 450px;
+}
+
+.token-percent {
+    text-align: center;
+    background-color: #040B42;
+    color: #F7CB46;
+    font-size: 2rem;
+    display: inline-block;
+    border-radius: 12px;
+    padding: 3px 15px;
+    
+}
+
+.token-text {
+    font-size: 4.5rem;
+    color: #FA8CA8;
+    -webkit-text-stroke: 2px #040B42;
+    text-shadow: 2px 2px 0px #040B42;
+    line-height: 0.4;
+    padding-left: 5px;
+}
+
+
+marquee {
+    background-color: var(--font-color);
+    color: var(--pri-color);
+    font-size: 4rem;
+    line-height: 1;
+
+}
+
+.wow-img {
+    position: relative;
+    top: -68px;
+}
+
+/* Roadmap */
+.phase {
+    border-radius: 56px;
+}
+
+
+
+.phase-heading {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 3px 15px;
+    font-family: "Stora";
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+
+.phase-subheading {
+    font-size: 2rem;
+}
+
+.phase-left .phase-heading {
+    left: 20%;
+}
+.phase-right .phase-heading {
+    right: 20%;
+}
+
+
+.phase-content {
+    padding-top: 5rem;
+}
+.phase-text {
+    font-size: 1.375rem;
+}
+
+/* Socail */
+.social {
+    border: 8px solid #3A055A;
+    border-radius: 24px;
+    background: url("/images/crewBg.png") center center/cover no-repeat;
+    padding: 2.5rem;
+}
+
+.social-title {
+    color: #F7CB46;
+    font-size: 4.5rem;
+    font-family: "Stora";
+    text-shadow: 3px 6px 0px #040B42;
+    -webkit-text-stroke: 2px #040B42
+}
+
+.social-mobile {
+    border: 3px solid #3A055A;
+    box-shadow: 6px 6px 0px 0px #040B42;
+    padding: 12px;
+    border-radius: 24px;
+
+}
+
+.social-screen {
+    border: 3px solid #3A055A;
+    background-color: #F7CB46;
+    padding: 16px 24px;
+    border-radius: 15px;
+}
+
+.mobile-1 {
+    transform: rotate(-8.55deg);
+}
+.mobile-2 {
+    transform: rotate(3.97deg);
+}
+
+.social-text {
+    font-size: 1.5rem;
 }
