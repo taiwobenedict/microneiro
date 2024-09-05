@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root {
+    --pri-color: #75D5E1;
+    --font-color: #3A055A;
+}
+
 body {
-    background-color: #75D5E1;
+    background-color: var(--pri-color);
+    color: var(--font-color);
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 img {
@@ -12,11 +24,11 @@ img {
     width: 100%;
     left: 0;
     top: 0;
-    
+
 }
 
 .hero-img img {
-    max-height: 99.2vh;  
+    max-height: 99.2vh;
 }
 
 .logo {
@@ -27,7 +39,7 @@ img {
     width: 100%;
     max-width: 500px;
     height: 100%;
-    
+
 }
 
 .menu {
@@ -36,6 +48,7 @@ img {
     left: 0;
     top: 0;
     z-index: 1;
+    padding-top: 5rem;
 }
 
 .menu-btn {
@@ -43,7 +56,30 @@ img {
     box-shadow: 6px 6px 0px 0px #040B42;
     font-size: 1rem;
     display: inline-block;
-    padding: 18px 28px;
+    border-radius: 24px;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    background-color: var(--pri-color);
+    cursor: pointer;
+    transition: 0.4s;
 }
 
+.menu-btn:hover {
+    box-shadow: unset;
+    transform: translate(5px, 5px);
+}
 
+.menubar {
+    height: 400px;
+    background-color: var(--pri-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    
+}
+
+.menubar .nav-link {
+    font-size: 1.5rem;
+}
