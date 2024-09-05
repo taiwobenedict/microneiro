@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="hero position-relative">
+    <div id="home" class="hero position-relative">
         <div class="hero-img">
             <img src="images/hero.png" alt="">
 
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="menu">
-            <div class="menu-btn">
+            <div class="menu-btn" onclick="controlMenu()">
                 Menu
             </div>
 
@@ -43,7 +43,18 @@
         </div>
     </div>
 
+    <section id="about">
 
+
+    </section>
+
+    <script>
+        const menubar = document.querySelector(".menubar")
+        function controlMenu() {
+            menubar.classList.toggle("show-menubar")
+
+        }
+    </script>
 
 </body>
 
