@@ -1,0 +1,25 @@
+body {
+    background-color: #75D5E1;
+}
+
+img {
+    width: 100%;
+}
+
+
+.hero-img img {
+    max-height: 99.2vh;  
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    width: 100%;
+    max-width: 1800px;
+    height: 100%;
+    
+}
+
+
