@@ -3,6 +3,8 @@
 :root {
     --pri-color: #75D5E1;
     --font-color: #3A055A;
+    --font-size-2rem: 2rem;
+    --token-size: 5.5rem;
 }
 
 @font-face {
@@ -57,30 +59,25 @@ section {
 
 .hero {
     height: 100%;
-}
-
-.hero-img {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
+    background: url('/images/hero.png') center center/cover no-repeat;
 
 }
 
-.hero-img img {
-    max-height: 99.2vh;
-}
-
-.logo {
+.hero-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -85%);
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     height: 100%;
 
 }
+
+.hero-img img {
+    max-height: 100vh;
+}
+
 
 .menu {
     position: absolute;
@@ -156,7 +153,7 @@ section {
 
 /* Tokenomics */
 .token-heading {
-    font-size: 5.5rem;
+    font-size: var(--token-size);
     text-align: center;
 
 }
@@ -168,14 +165,14 @@ section {
 }
 
 .chart-img {
-    max-width: 450px;
+    max-width: 500px;
 }
 
 .token-percent {
     text-align: center;
     background-color: #040B42;
     color: #F7CB46;
-    font-size: 2rem;
+    font-size: var(--font-size-2rem);
     display: inline-block;
     border-radius: 12px;
     padding: 3px 15px;
@@ -201,20 +198,39 @@ marquee {
 }
 
 .wow-img {
+    margin-top: -7%;
     position: relative;
-    top: -68px;
+    
 }
 
 /* Roadmap */
 .phase {
     border-radius: 56px;
+    margin-bottom: 4rem;
+}
+
+.phase-img {
+    height: 100%;
+}
+
+.phase-img.one {
+ background: url("images/phase1.png") center center/cover no-repeat;
+}
+.phase-img.two {
+ background: url("images/phase2.png") center center/cover no-repeat;
+}
+.phase-img.three {
+ background: url("images/phase3.png") center center/cover no-repeat;
+}
+.phase-img.four {
+ background: url("images/phase4.png") center center/cover no-repeat;
 }
 
 
 
 .phase-heading {
     display: inline-block;
-    font-size: 2rem;
+    font-size: var(--font-size-2rem);
     margin-bottom: 2.5rem;
     padding: 3px 15px;
     font-family: "Stora";
@@ -224,7 +240,7 @@ marquee {
 }
 
 .phase-subheading {
-    font-size: 2rem;
+    font-size: var(--font-size-2rem);
 }
 
 .phase-left .phase-heading {
@@ -263,6 +279,8 @@ marquee {
     box-shadow: 6px 6px 0px 0px #040B42;
     padding: 12px;
     border-radius: 24px;
+    text-decoration: none !important;    
+    color: var(--font-color);
 
 }
 
@@ -278,8 +296,196 @@ marquee {
 }
 .mobile-2 {
     transform: rotate(3.97deg);
+    position: relative;
+    top: 20px;
+    margin-top: 20px;
 }
 
 .social-text {
     font-size: 1.5rem;
 }
+
+.fa-brands {
+    font-size: var(--font-size-2rem);
+    color: #fff;
+}
+
+.disclaimer {
+    padding-bottom: 50px;
+    font-size: var(--font-size-2rem);
+}
+
+
+
+@media (max-width: 1200px) {
+    .about-heading {
+      font-size: 3.5rem;
+    }
+    .about-text {
+      font-size: 1.9rem;
+    }
+    .token-heading {
+      font-size: 4.5rem;
+    }
+    .token-text {
+      font-size: 4rem;
+    }
+    .token-percent, .phase-heading, .phase-subheading {
+      font-size: 1.8rem;
+    }
+    marquee {
+      font-size: 3.5rem;
+    }
+    .social-title {
+      font-size: 4rem;
+    }
+    .social-text {
+      font-size: 1.3rem;
+    }
+    .fa-brands, .disclaimer {
+      font-size: 1.8rem;
+    }
+    .menu-btn, .menubar .nav-link {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-heading {
+      font-size: 3rem;
+    }
+    .about-text {
+      font-size: 1.7rem;
+    }
+    .token-heading {
+      font-size: 4rem;
+    }
+    .token-text {
+      font-size: 3.5rem;
+    }
+    .token-percent, .phase-heading, .phase-subheading {
+      font-size: 1.6rem;
+    }
+    marquee {
+      font-size: 3rem;
+    }
+    .social-title {
+      font-size: 3.5rem;
+    }
+    .social-text {
+      font-size: 1.2rem;
+    }
+    .fa-brands, .disclaimer {
+      font-size: 1.6rem;
+    }
+    .menu-btn, .menubar .nav-link {
+      font-size: 1.8rem;
+    }
+
+    .phase-img {
+        height: 400px;
+    }
+    .phase-content {
+        padding-top: 2rem;
+    }
+
+    .phase-heading {
+        position: static;
+    }
+
+    .social-img {
+        max-width: 500px;
+        margin-bottom: 2rem;
+        margin-inline: auto;
+    }
+
+    .social-content {
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    .menu {
+        margin-top: 6rem;
+    }
+
+    .menubar {
+        height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-heading {
+      font-size: 2.5rem;
+    }
+    .about-text {
+      font-size: 1.5rem;
+    }
+    .token-heading {
+      font-size: 3.5rem;
+    }
+    .token-text {
+      font-size: 3rem;
+    }
+    .token-percent, .phase-heading, .phase-subheading {
+      font-size: 1.4rem;
+    }
+    marquee {
+      font-size: 2.5rem;
+    }
+    .social-title {
+      font-size: 3rem;
+    }
+    .social-text {
+      font-size: 1.1rem;
+    }
+    .fa-brands, .disclaimer {
+      font-size: 1.4rem;
+    }
+    .menu-btn, .menubar .nav-link {
+      font-size: 1.5rem;
+    }
+    .phase-img {
+        height: 300px;
+    }
+
+    .chart-img {
+        max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
+    .about-heading {
+      font-size: 2rem;
+    }
+    .about-text {
+      font-size: 1.3rem;
+    }
+    .token-heading {
+      font-size: 3rem;
+    }
+    .token-text {
+      font-size: 2.5rem;
+    }
+    .token-percent, .phase-heading, .phase-text {
+      font-size: 1.2rem;
+    }
+    marquee {
+      font-size: 2rem;
+    }
+    .social-title {
+      font-size: 2.5rem;
+    }
+    .social-text {
+      font-size: 1rem;
+    }
+    .fa-brands, .disclaimer {
+      font-size: 1.2rem;
+    }
+    .menu-btn, .menubar .nav-link {
+      font-size: 1.2rem;
+    }
+  }
+  
