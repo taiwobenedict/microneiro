@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>MICRONEIRO</title>
 </head>
@@ -14,35 +16,35 @@
 
     <div id="home" class="hero position-relative">
         <div class="hero-logo">
-                <img src="images/logo.svg" class="h-100" alt="">
+            <img src="images/logo.svg" class="h-100" alt="">
+        </div>
+    </div>
+
+    <div class="menu">
+
+        <div class="container-fluid">
+            <div class="menu-btn" onclick="controlMenu()">
+                Menu
             </div>
         </div>
 
-        <div class="menu">
-
-            <div class="container-fluid">
-                <div class="menu-btn" onclick="controlMenu()">
-                    Menu
-                </div>
-            </div>
-
-            <div class="menubar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tokenomics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Roadmap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Social</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="menubar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#roadmap">Roadmap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#social">Social</a>
+                </li>
+            </ul>
         </div>
+    </div>
     </div>
 
     <section id="about" class="container-fluid">
@@ -51,16 +53,27 @@
             <div class="about-heading">ABOUT</div>
             <div class="about-text p-3">
                 <p>
-                    The idea behind the DOGENGERS heroes is rooted in the concept of powerful guardians who embody the virtues of loyalty, courage, and justice, just like legendary canine heroes in the real world. These heroes aren't just ordinary dogs; they are symbolic figures who take on larger-than-life roles to protect both people and the financial well-being of society. They stand as protectors of balance, ensuring that the scales of good and evil remain equal in a world that often tips towards chaos.
+                    The idea behind the DOGENGERS heroes is rooted in the concept of powerful guardians who embody the
+                    virtues of loyalty, courage, and justice, just like legendary canine heroes in the real world. These
+                    heroes aren't just ordinary dogs; they are symbolic figures who take on larger-than-life roles to
+                    protect both people and the financial well-being of society. They stand as protectors of balance,
+                    ensuring that the scales of good and evil remain equal in a world that often tips towards chaos.
                 </p>
-    
+
                 <p>
-                    Guided by the universal balance of good and evil, DOGENGERS are the guardians of fairness. They fight against greed, inequality and corruption, ensuring that power is balanced and justice is served. In a world where darkness often overshadows the light, DOGENGERS rise as protectors, using their strength to bring harmony and peace.
-                    These dog heroes are like modern day legends - each with their unique abilities and unbreakable spirit, united by their mission to defend the vulnerable and stand against injustice. 
+                    Guided by the universal balance of good and evil, DOGENGERS are the guardians of fairness. They
+                    fight against greed, inequality and corruption, ensuring that power is balanced and justice is
+                    served. In a world where darkness often overshadows the light, DOGENGERS rise as protectors, using
+                    their strength to bring harmony and peace.
+                    These dog heroes are like modern day legends - each with their unique abilities and unbreakable
+                    spirit, united by their mission to defend the vulnerable and stand against injustice.
                 </p>
-    
+
                 <p>
-                    In essence, the DOGENGERS are not just heroes of the financial world but guardians of universal balance, ensuring that goodness, justice, and opportunity prevail. By investing in and supporting the DOGENGERS, you're not just gaining financial assets—you’re joining a cause that strives for a better, more equitable world.
+                    In essence, the DOGENGERS are not just heroes of the financial world but guardians of universal
+                    balance, ensuring that goodness, justice, and opportunity prevail. By investing in and supporting
+                    the DOGENGERS, you're not just gaining financial assets—you’re joining a cause that strives for a
+                    better, more equitable world.
                 </p>
             </div>
         </div>
@@ -151,6 +164,7 @@
 
     <section id="roadmap">
         <div class="container">
+            <h1 class="shadow-text token-heading mb-5">Roadmap</h1>
             <div class="phases">
                 <div class="phase phase-left box pink p-4 position-relative" style="background-color: #ECD0FF;">
                     <div class="phase-heading box" style="background-color: #F56E90;">
@@ -159,14 +173,18 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="box-inset phase-img one">
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-8">
                             <div class="phase-content">
-                                <div class="mb-4 phase-subheading">Establish the fundamental principles of protection, fairness, and security within the DOGENGERS ecosystem.</div>
-                                <p class="phase-text">Launch of the Token on Pancakeswap: Initial distribution of the DOGENGERS token with a focus on fair access and wide distribution to prevent early monopolization.
-                                    Including: Smart contract audit, Community establishment and development, Spreading the word about the DOGENGERS.
+                                <div class="mb-4 phase-subheading">Establish the fundamental principles of protection,
+                                    fairness, and security within the DOGENGERS ecosystem.</div>
+                                <p class="phase-text">Launch of the Token on Pancakeswap: Initial distribution of the
+                                    DOGENGERS token with a focus on fair access and wide distribution to prevent early
+                                    monopolization.
+                                    Including: Smart contract audit, Community establishment and development, Spreading
+                                    the word about the DOGENGERS.
                                 </p>
                             </div>
                         </div>
@@ -179,13 +197,17 @@
                     <div class="row">
                         <div class="col-lg-4 order-lg-2">
                             <div class="box-inset phase-img two">
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-8 order-lg-1">
                             <div class="phase-content">
-                                <div class="mb-4 phase-subheading">Build a powerful, resilient financial ecosystem that prevents the concentration of wealth and promotes economic fairness and start our incredible marketing journey.</div>
-                                <p class="phase-text">Collaboration with like-minded organizations and platforms that align with DOGENGERS' mission of economic fairness and justice. Listings on the multiple platforms, such as CoinMarketCap to reach wider audience.
+                                <div class="mb-4 phase-subheading">Build a powerful, resilient financial ecosystem that
+                                    prevents the concentration of wealth and promotes economic fairness and start our
+                                    incredible marketing journey.</div>
+                                <p class="phase-text">Collaboration with like-minded organizations and platforms that
+                                    align with DOGENGERS' mission of economic fairness and justice. Listings on the
+                                    multiple platforms, such as CoinMarketCap to reach wider audience.
                                 </p>
                             </div>
                         </div>
@@ -198,12 +220,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="box-inset phase-img three">
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-8">
                             <div class="phase-content">
-                                <div class="mb-4 phase-subheading">The DOGENGERS stand against corrupt systems and unethical practices, ensuring that fairness prevails. They expose wrongdoing and use their influence to bring about justice in the financial world.                                </div>
+                                <div class="mb-4 phase-subheading">The DOGENGERS stand against corrupt systems and
+                                    unethical practices, ensuring that fairness prevails. They expose wrongdoing and use
+                                    their influence to bring about justice in the financial world. </div>
                                 <p class="phase-text">
                                     Collaborating with key opinion leaders, CMC trending, Dextools trending.
                                 </p>
@@ -218,14 +242,17 @@
                     <div class="row">
                         <div class="col-lg-4 order-lg-2">
                             <div class="box-inset phase-img four">
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-8 order-lg-1">
                             <div class="phase-content">
-                                <div class="mb-4 phase-subheading">This DOGENGER focuses on restoring balance where it has been lost, providing aid to those who have suffered from economic hardships or who need help rebuilding their financial lives.                                </div>
+                                <div class="mb-4 phase-subheading">This DOGENGER focuses on restoring balance where it
+                                    has been lost, providing aid to those who have suffered from economic hardships or
+                                    who need help rebuilding their financial lives. </div>
                                 <p class="phase-text">
-                                    Growing our community on a global scale, CEX Listing Tier 2, 5000 followers on Twitter.
+                                    Growing our community on a global scale, CEX Listing Tier 2, 5000 followers on
+                                    Twitter.
                                 </p>
                             </div>
                         </div>
@@ -273,14 +300,79 @@
     </section>
 
     <section class="disclaimer">
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#exampleModal">
             <div class="box px-3">
                 Disclaimer
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="phase-subheading" id="exampleModalLabel">Disclaimer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <p class="mb-4 phase-text">
+                            DOGENGERS is a cryptocurrency project that represents a vision of financial freedom,
+                            fairness, and community-driven empowerment. However, investing in cryptocurrencies,
+                            including DOGENGERS, involves inherent risks. Cryptocurrency markets are highly volatile,
+                            and the value of DOGENGERS tokens may fluctuate significantly.
+                        </p>
+                        <h4>Please be aware of the following: </h4>
+
+                        <ol class="phase-text">
+                            <li>Not Financial Advice: The information provided by DOGENGERS is for educational and
+                                informational purposes only and should not be construed as financial, investment, or
+                                legal
+                                advice. Always conduct your own research and consult with a financial advisor before
+                                making any
+                                investment decisions.</li>
+                            <li> Market Risks: The cryptocurrency market is unpredictable, and investments can lose
+                                value.
+                                There is no guarantee of returns or that the value of DOGENGERS tokens will increase
+                                over time.</li>
+                            <li> Regulatory Risks: The regulatory environment for cryptocurrencies is continually
+                                evolving.
+                                DOGENGERS may be subject to changes in laws or regulations that could affect its use,
+                                value, or
+                                legality in certain jurisdictions.</li>
+                            <li>Security Risks: While the DOGENGERS team is committed to implementing strong security
+                                measures, no system is completely immune to breaches. Always exercise caution and use
+                                secure
+                                practices when handling your tokens.</li>
+                    
+                        </ol>
+
+                        <p class="phase-text"> 
+
+                            By participating in the DOGENGERS ecosystem, you acknowledge and accept these risks.
+                            DOGENGERS
+                            and its team are not responsible for any financial losses or legal issues that may arise
+                            from
+                            your involvement with the token. Please invest responsibly and only what you can afford to
+                            lose.
+
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
 
 <script>

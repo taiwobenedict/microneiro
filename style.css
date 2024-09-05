@@ -15,6 +15,10 @@
     font-weight: normal;
     font-style: normal;
   }
+
+html {
+    scroll-behavior: smooth;
+}
   
 
 body {
@@ -198,7 +202,7 @@ marquee {
 }
 
 .wow-img {
-    margin-top: -7%;
+    margin-top: -6%;
     position: relative;
     
 }
@@ -313,11 +317,21 @@ marquee {
 .disclaimer {
     padding-bottom: 50px;
     font-size: var(--font-size-2rem);
+    cursor: pointer;
 }
 
 
 
+@media (min-width: 1300px) {
+    .container-fluid {
+        max-width: 1400px !important;
+    }
+}
+
 @media (max-width: 1200px) {
+    .container {
+        max-width: 1200px !important;
+    }
     .about-heading {
       font-size: 3.5rem;
     }
