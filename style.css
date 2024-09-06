@@ -154,6 +154,8 @@ section {
 .about-text {
     font-size: 2.1875rem;
     font-weight: 100;
+    word-spacing: 10px;
+    /* letter-spacing: 1px; */
     text-align: justify !important;
 }
 
