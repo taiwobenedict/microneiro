@@ -468,6 +468,9 @@ marquee {
   }
   
   @media (max-width: 576px) {
+    .hero {
+      background: url("/images/heroMobile.JPG") center center/cover no-repeat;
+    }
     body {
         overflow-x: hidden;
     }
